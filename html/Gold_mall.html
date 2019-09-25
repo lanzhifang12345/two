@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="../js/iconfont/iconfont.css">
+		<link rel="stylesheet" href="../css/qian.css">
+		<script src="../js/jquery-3.4.1.js"></script>
+		<script>
+			$(function(){
+                 $('.commodity-bar>li').click(function(event) {
+                 	 $(this).addClass('commodities');
+                 	 $(this).siblings('li').removeClass('commodities');
+                 	 console.log($(this).index());
+                 	 var a=$(this).index();
+
+                 	 $('.commodity-center>ul').eq(a).attr("id","crg-uls");
+                 	 $('.commodity-center>ul').eq(a).siblings('ul').attr("id","");
+                 });
+			});
+		</script>
+	</head>
+	<body>
+	<!-- 页面顶端 -->
+		<div class="top">
+			<ul>
+				<li>
+				    <a href="../index.html">
+				      <span class="iconfont icon-jia crg-sp"></span>
+					  1号店首页
+					</a>  				  
+				</li>
+				<li>
+				   <span class="iconfont icon-place crg-sp"></span>
+				   送货地址：上海
+				</li>
+				<div class="hi-d">
+					<a href="registe.html">
+						<li class="hi">hi，请登录</li>						
+					</a>
+					<li>注册</li>
+					<li>
+					   <span class="iconfont icon-dingwei-"></span>
+					   我的订单
+					</li>
+					<li class="service">
+					    <a href="#" class="service-a">客户服务</a>      
+                        <p class="service-p">∨</p>
+                        <div id="service-d">
+                        	<a href="#">包裹跟踪</a><br>
+                        	<a href="#">在线退换货</a>
+                        </div>
+					</li>
+					<li class="down">
+					    <span class="iconfont icon-phone"></span>
+					    <p class="down-app">APP下载</p><br>
+					   <div id="down-d">
+					     <div id="triangle1"></div>
+					   	 <p>扫描二维码</p>
+					   	 <p>下载1号店APP</p>
+					   	 <a href=""><img src="../img/qryhd.png" alt=""></a>
+					   </div>
+					</li>
+				</div>
+			</ul>
+		</div>
+		<!-- 页面顶端 -->
+		<!-- 金币商城logo 页眉-->
+		<div class="jinbi">
+			<div id="jinbi-1">
+				<img src="../img/logo.svg" alt="" class="logo">
+				<img src="../img/header.gif" alt="">
+				<a class="shouyea" href="#">首页</a>
+				<a class="shangpina" href="#">金币商品</a>
+				<div class="shoppingcar">
+				    <span class="iconfont icon-gouwuche">  购物车</span>
+				</div>
+			</div>
+		</div>
+		<!-- 金币商城logo 页眉-->
+		<!-- 登录，超级品牌，超级攻略 -->
+		<div class="fuli">
+		    <div class="xfcenter">
+				<div class="login">
+				     <div class="photo">
+				     	   <img src="../img/touxiang.png" alt="" class="touxiang">			     	
+	        	     </div>
+				     <div class="icon">
+				     	<span class="iconfont icon-jinbi"></span>
+
+				     	<p>登录后可查看金币</p>
+				     </div>
+				     <a href="registe.html">
+				  	    <div class="crg-button">请先登录</div>
+				     </a>
+				</div>
+				<img class="jishi" src="../img/fuli.jpg" alt="">
+				<div class="crg-right">
+                    <div>
+                    	<h3 class="suph3">超级品牌</h3>
+                    	<p class="line line-big"></p>
+                    	<img src="../img/pinpai.jpg" alt="" class="pinpai">
+                    </div>
+                    <div>
+                    	<h3 class="suph3">超级攻略</h3>
+                    	<p class="line line-big"></p>
+                    	<img src="../img/gonglue.png" alt="" class="pinpai">
+                    </div>
+			    </div>
+			</div>
+		</div>
+		<!-- 登录，超级品牌，超级攻略 -->
+		<!-- 热点活动 -->
+	    <div class="hot">
+	        <div class="hot1">
+               <div class="hot2">
+			        <h3>热点活动</h3>
+			        <p class="line line-big2"></p>
+		       </div>
+		        <ul class="hot3">
+			        <li>
+			          <div class="hot4">
+			        	<h4 class="hot-h4">领券中心</h4>
+			        	<p>领券中心</p>
+			        	<p class="line line-big3"></p>
+			          </div>
+			        	<img src="../img/hot1.png" alt="">
+			        </li>
+			        <li>
+			          <div class="hot4">
+			        	<h4 class="hot-h4">新人大礼包</h4>
+			        	<p>新人大礼包</p>
+			        	<p class="line line-big3"></p>
+			          </div>	
+			        	<img src="../img/hot2.png" alt="">	
+			        </li>
+			        <li>
+			          <div class="hot4">
+			        	<h4 class="hot-h4">福利集市</h4>
+			        	<p>福利集市</p>
+			        	<p class="line line-big3"></p>
+			          </div>
+			        	<img src="../img/hot3.png" alt="">
+			        </li>
+		        </ul>
+	        </div>
+	    </div>
+		<!-- 热点活动 -->
+		<!-- 金币商品 -->
+		<div class="commodity">
+			<div class="commodity-center">
+				<div class="commodity-head">
+			        <div class="hot2">
+				        <h3>金币商品</h3>
+				        <p class="line line-big2"></p>
+		            </div>
+			    </div>
+			    <div class="commodity-bar">
+			       <li id="commodity-li1" class="commodities">全部商品</li>
+			       <li id="commodity-li2">服饰鞋帽</li>
+			       <li>手机数码</li>
+			    </div>
+			    <ul id="crg-uls">
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li id="book1-li5">
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li id="book1-li5">
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li id="book1-li5">
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<div class="more">
+				      <a href=""><span class="more1">更多商品 ﹀</span>
+				      </a>
+			        </div>			
+			    </ul>  
+			    <ul>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li id="book1-li5">
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    </ul> 
+			    <ul>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li id="book1-li5">
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+			    	<li>
+			    		<a href="#" class="a-book1">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+					<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>
+					<li>
+			    		<a href="#">
+			    			<img src="../img/book1.jpg" alt="" class="book1">
+			    			<div class="book-span">
+			    				<p class="book1-p">全4本 新媒体运营+社群+口碑营销创意...</p>
+			    				<span class="iconfont icon-renminbi ">48.8</span>
+			    				<div class="price">
+			    					<p id="price-p1">+</p>
+			    					<p id="price-p2">10</p>
+			    					<p id="price-p3">金币</p>
+			    					<div class="price-d2">
+			    						<div class="rectangle">省￥50</div>
+			    						<div class="triangle"></div>
+			    					</div>
+			    				</div>
+			    			</div>
+			    			<div class="price-d3">
+			    				<p>￥50.8</p>
+			    				<span class="iconfont icon-jiarugouwuche"></span>
+			    			</div>
+			    		</a>
+			    	</li>			    		    	
+			    </ul>    
+			</div>
+		</div>
+		<!-- 金币商品 -->
+		<!-- 底部 -->
+		<div class="buttom-box">
+				<div class="bottom-center">
+					<div class="footerIcon">
+					     <a href="">
+					        <img src="../img/bottom1.png" alt="">
+					     	<b>正品保障</b>
+					     	<span>正品行货 放心选购</span>
+					     </a>
+					     <a href="">
+					        <img src="../img/bottom2.png" alt="">
+					     	<b>满86包邮</b>
+					     	<span>满86元免运费</span>
+					     </a>
+					     <a href="">
+					        <img src="../img/bottom3.png" alt="">
+					     	<b>售后无忧</b>
+					     	<span>七天无理由退货</span>
+					     </a>
+					     <a href="">
+					        <img src="../img/bottom4.png" alt="">
+					     	<b>准时送达</b>
+					     	<span>收货时间由你做主</span>
+					     </a>
+					</div>
+					<div class="wrap">
+						<dl>
+							<dt>新手入门</dt>
+							<dd>会员制度</dd>
+							<dd>订单查询</dd>
+							<dd>服务协议及隐私说明</dd>
+							<dd>网站地图</dd>
+						</dl>
+						<dl>
+							<dt>支付方式</dt>
+							<dd>货到付款</dd>
+						    <dd>网上支付</dd>
+							<dd>礼品卡支付</dd>
+							<dd>其他支付</dd>
+						</dl>
+						<dl>
+							<dt>配送服务</dt>
+							<dd>配送进度查询</dd>
+							<dd>商品验货与签收</dd>
+							<dd> </dd>
+							<dd> </dd>
+						</dl>
+						<dl>
+						    <dt>相关规则</dt>
+							<dd>平台规则</dd>
+							<dd>退换货政策</dd>
+							<dd>发票制度</dd>
+							<dd>帮助中心</dd>
+						</dl>
+						<div class="two-photo">  
+						    <div>
+								<p>APP更优惠</p>
+								<img src="../img/bottom5.png" alt="">
+						    </div>
+						    <div class="tow-photo2" >
+						    	<p>加微信查订单</p>
+							    <img src="../img/bottom6.jpg" alt="">
+						    </div>
+						</div>
+					</div>		
+				</div>
+                <div class="footer">
+					<p>沪ICP备16050468号 | 经营证照 | 互联网药品信息服务资格证(沪)-经营性-2017-0006 | 违法和不良信息举报电话：0527-88100253 | 沪B2-20170039 | 沪公网安备 31010502002939号 | 友情链接 | 出版物经营许可证 | 增值电信业务经营许可证</p>
+					<p>Copyright© 1号店网上超市 2007-2019，All Rights Reserved</p>
+					<img src="../img/bottom7.jpg" alt="">
+					<img src="../img/bottom8.png" alt="">
+					<img src="../img/bottom9.jpg" alt="">
+					<img src="../img/bottom10.jpg" alt="">
+					<img src="../img/bottom11.png" alt="">
+					<img src="../img/bottom12.png" alt="">
+					<img src="../img/bottom13.jpg" alt="">
+		        </div>				
+		</div>
+		<!-- 底部 -->
+		
+	</body>
+</html>

@@ -1,0 +1,215 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #fcfcfc;
+	min-width: 1580px;
+}
+.dl-top{
+	height: 80px;
+	width: 100%;
+	background-color: #ffffff;
+	box-shadow: 2px 0px 5px #e1e1e1;
+}
+.dl-top>.dl-top-img{
+	float: left;
+	margin-top: 15px;
+	margin-left: 185px;
+}
+.dl-top>p{
+	float: left;
+	margin-top: 12px;
+	margin-left: 700px;
+	font-size: 14px;
+	color: #999999;
+}
+.dl-top>a{
+	float: left;
+	margin-top: 12px;
+	font-size: 14px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+.dl-top-help{
+	float: left;
+	margin-top: 12px;
+	font-size: 14px;
+	margin-left: 10px;
+	color: #999999;
+	width: 90px;
+	height: 25px;
+}
+.dl-top-help:hover{
+	border: 1px solid #e1e1e1;
+}
+.dl-top-help>span{
+	float: left;
+	line-height: 22px;
+	font-size: 14px;
+}
+.dl-top-help-box{
+	width: 85px;
+	height: 108px;
+	margin-top: 25px;
+	position: absolute;
+	display: none;
+	background-color: white;
+}
+.dl-top-help>p{
+	float: left;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: white;
+}
+.dl-top-help>p:hover{
+	color: red;
+}
+.dl-top-help:hover>.dl-top-help-box{
+	display: block;
+}
+.dl-top-help-box>p{
+	width: 90px;
+	height: 25px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #e1e1e1;
+}
+.dl-top-help-box>p:hover{
+	color: red;
+}
+.dl-middle{
+	width: 1000px;
+	height: 500px;
+	background-color: #fcfcfc;
+	margin: auto;
+	margin-top: 5px;
+}
+.dl-middle-one{
+	float: left;
+	margin-top: 80px;
+}
+.dl-middle-two{
+	float: left;
+	width: 400px;
+	height: 420px;
+	margin-top: 40px;
+	margin-left: 40px;
+	background-color: #ffffff;
+}
+.dl-middle-two-a{
+	width: 330px;
+	height: 30px;
+	margin: auto;
+	margin-top: 40px;
+}
+.dl-middle-two-a>p{
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+.dl-middle-two-a>a{
+	float: right;
+	text-decoration: none;
+	font-size: 14px;
+}
+.dl-middle-two-b{
+	width: 330px;
+	height: 50px;
+	margin: auto;
+}
+.dl-middle-two-b>span{
+	position: absolute;
+	font-size: 24px;
+	margin: 15px 10px;
+	color: #b5b5b5;
+}
+.dl-middle-two-b>input{
+	width: 280px;
+	height: 50px;
+	font-size: 16px;
+	padding-left: 50px;
+}
+.dl-middle-two-c{
+	width: 330px;
+	height: 50px;
+	margin: auto;
+	margin-top: 20px;
+}
+.dl-middle-two-c>span{
+	position: absolute;
+	font-size: 24px;
+	margin: 15px 10px;
+	color: #b5b5b5;
+}
+.dl-middle-two-c>input{
+	width: 280px;
+	height: 50px;
+	font-size: 16px;
+	padding-left: 50px;	
+}
+.dl-middle-two-d{
+	width: 330px;
+	height: 20px;
+	margin: auto;
+	margin-top: 10px;
+}
+.dl-middle-two-d>input{
+	margin: 4px;
+	float: left;
+}
+.dl-middle-two-d>p{
+	float: left;
+	font-size: 14px;
+}
+.dl-middle-two-d>a{
+	float: right;
+	margin-left;
+	text-decoration: none;
+	font-size: 14px;
+}
+.dl-middle-two-e{
+	width: 330px;
+	height: 50px;
+	margin: auto;
+	margin-top: 10px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 3px;
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+.dl-middle-two-f{
+	width: 330px;
+	height: 20px;
+	margin: auto;
+	margin-top: 10px;	
+}
+.dl-middle-two-f>p{
+	font-size: 14px;
+}
+.dl-middle-two-g{
+	width: 330px;
+	height: 40px;
+	margin: auto;
+	margin-top: 10px;
+}
+.dl-middle-two-g>span{
+	font-size: 40px;
+	margin-left: 30px;
+	cursor: pointer;
+}
+.icon-qq{
+	color: #21ffff;
+}
+.icon-weixin{
+	color: #21ff20;
+}
+.icon-jd{
+	color: #d80000;
+}
+.icon-xinlang{
+	color: #ff0000;
+}

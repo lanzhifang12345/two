@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>1号店登陆界面</title>
+        <link rel="stylesheet" href="../css/registe.css">
+        <link rel="stylesheet" href="../js/font_8wm9fr6elux/iconfont.css">
+        <script src="../js/jquery.min.js"></script>
+    </head>
+    <body>
+    	<script>
+    		$(function(){
+    			$('.admins').blur(function(event) {
+    				var v=(/^1[34578]\d{9}$|^\w+@\w+(\.[a-zA-Z]{2,3}){1,2}$|^[0-9a-zA-Z_]{4,8}$/);
+    				var was=$('.admins').val();
+    				if(!v.test(was)){
+    					alert("请输入正确的用户名");
+    					return false;
+    				}/jnn/
+    			});
+			$('.passwords').blur(function(event) {
+    				var va=/^[0-9a-zA-Z_]{6,12}$/;
+    				var wasd=$('.passwords').val();
+    				if(!va.test(wasd)){
+    					alert("密码格式不正确");
+    					return false;
+    				}
+    			});
+    		})
+    	</script>
+    	<div class="dl-top">
+    		<div class="dl-top-img">
+    			<img src="../img/dl_loginlogo.jpg" alt="">
+    		</div>
+    		<p>您好，欢迎光临一号店！</p>
+    		<a href="#">请登陆</a>
+    		<div class="dl-top-help">
+    			<span class="iconfont icon-bangzhu"></span>
+    			<p>帮助中心</p>
+    			<span class="iconfont icon-xiaojiantou"></span>
+    			<div class="dl-top-help-box">
+    				<p>包裹跟踪</p>
+    				<p>常见问题</p>
+    				<p>在线退换货</p>
+    				<p>在线投诉</p>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="dl-middle">
+    		<div class="dl-middle-one">
+    			<img src="../img/dl_login_pic.png" alt="">
+    		</div>
+    		<div class="dl-middle-two">
+    			<div class="dl-middle-two-a">
+    				<p>1号店用户登录</p>
+    				<a href="#">注册新账号</a>
+    			</div>
+    			<div class="dl-middle-two-b">
+    				<span class="iconfont icon-xiaoren"></span>
+    				<input type="text" placeholder="邮箱/手机/用户名" class="admins">
+    			</div>
+    			<div class="dl-middle-two-c">
+    			    <span class="iconfont icon-suo"></span>
+    				<input type="password" placeholder="密码" class="passwords">
+    			</div>
+    			<div class="dl-middle-two-d">
+    				<input type="checkbox" >
+    				<p>自动登录</p>
+    				<a href="#">忘记密码？</a>
+    			</div>
+    			<div class="dl-middle-two-e">登录</div>
+    			<div class="dl-middle-two-f">
+    				<p>更多合作网站账号登录</p>
+    			</div>
+    			<div class="dl-middle-two-g">
+                    <span class="iconfont icon-qq"></span>
+                    <span class="iconfont icon-weixin"></span>
+                    <span class="iconfont icon-jd"></span>
+                    <span class="iconfont icon-xinlang"></span>
+                </div>
+    		</div>
+    	</div>
+    </body>
+</html>

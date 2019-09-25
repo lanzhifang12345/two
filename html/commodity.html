@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>具体商品</title>
+        <script src="../js/jquery.min.js"></script>
+		<link rel="stylesheet" href="../css/commodity.css">
+		<link rel="stylesheet" href="../js/font_8wm9fr6elux/iconfont.css">
+    </head>
+    <body>
+    	<script>
+    		$(function(){
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(0).mouseover(function(event) {
+    				var src=$(this).attr('src')
+    				$('.commodity-middle-two-a-top-img').css({
+    						'background':'url('+src+') no-repeat'
+    				})
+    				$(this).css({
+    					'border':'2px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(0).mouseout(function(event) {
+    				$(this).css({
+    					'border':'0px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(1).mouseover(function(event) {
+    				var src=$(this).attr('src')
+    				$('.commodity-middle-two-a-top-img').css({
+    						'background':'url('+src+') no-repeat'
+    				})
+    				$(this).css({
+    					'border':'2px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(1).mouseout(function(event) {
+    				$(this).css({
+    					'border':'0px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(2).mouseover(function(event) {
+    				var src=$(this).attr('src')
+    				$('.commodity-middle-two-a-top-img').css({
+    						'background':'url('+src+') no-repeat'
+    				})
+    				$(this).css({
+    					'border':'2px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(2).mouseout(function(event) {
+    				$(this).css({
+    					'border':'0px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(3).mouseover(function(event) {
+    				var src=$(this).attr('src')
+    				$('.commodity-middle-two-a-top-img').css({
+    						'background':'url('+src+') no-repeat'
+    				})
+    				$(this).css({
+    					'border':'2px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(3).mouseout(function(event) {
+    				$(this).css({
+    					'border':'0px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(4).mouseover(function(event) {
+    				var src=$(this).attr('src')
+    				$('.commodity-middle-two-a-top-img').css({
+    						'background':'url('+src+') no-repeat'
+    				})
+    				$(this).css({
+    					'border':'2px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-middle-uls-lis').eq(4).mouseout(function(event) {
+    				$(this).css({
+    					'border':'0px solid #999999'
+    				})
+    			});
+    			$('.commodity-middle-two-a-top-movebox').mouseover(function(event) {
+    				$('.commodity-middle-two-a-top-movebox').mousemove(function(event) {
+		    				var x=e.clientX;
+							var y=e.clientY;
+							$('img').css({
+								'left':x+'px',
+								'top':y+'px'
+							})
+    				});
+    			});
+    			var num= 0;
+    			$('.commodity-middle-two-c-first-one').click(function(event) {
+    				num++;
+    				if(num>2){
+    					num=0
+    				}
+    				$('.commodity-middle-two-c-second').css('margin-left', -180*num+'px');
+    			});
+    			$('.commodity-middle-three-right-c li').eq(0).click(function(event) {
+    				$('.commodity-middle-three-right-c-one').css('display','block')
+    				$('.commodity-middle-three-right-c-two').css('display','block')
+    				$('.commodity-middle-three-right-c-three').css('display','none')
+    				$('.commodity-middle-three-right-c-four').css('display','none')
+    				$(this).addClass('commodity-middle-three-right-c-lis')
+					$(this).siblings('li').removeClass('commodity-middle-three-right-c-lis')
+    			});
+    			$('.commodity-middle-three-right-c li').eq(1).click(function(event) {
+    				$('.commodity-middle-three-right-c-one').css('display','none')
+    				$('.commodity-middle-three-right-c-two').css('display','none')
+    				$('.commodity-middle-three-right-c-three').css('display','none')
+    				$('.commodity-middle-three-right-c-four').css('display','none')
+    				$(this).addClass('commodity-middle-three-right-c-lis')
+					$(this).siblings('li').removeClass('commodity-middle-three-right-c-lis')
+    			});
+    			$('.commodity-middle-three-right-c li').eq(2).click(function(event) {
+    				$('.commodity-middle-three-right-c-one').css('display','none')
+    				$('.commodity-middle-three-right-c-two').css('display','none')
+    				$('.commodity-middle-three-right-c-three').css('display','block')
+    				$('.commodity-middle-three-right-c-four').css('display','block')
+    				$(this).addClass('commodity-middle-three-right-c-lis')
+					$(this).siblings('li').removeClass('commodity-middle-three-right-c-lis')
+    			});
+    			$('.commodity-middle-three-right-c li').eq(3).click(function(event) {
+    				$('.commodity-middle-three-right-c-one').css('display','none')
+    				$('.commodity-middle-three-right-c-two').css('display','none')
+    				$('.commodity-middle-three-right-c-three').css('display','none')
+    				$('.commodity-middle-three-right-c-four').css('display','block')
+    				$(this).addClass('commodity-middle-three-right-c-lis')
+					$(this).siblings('li').removeClass('commodity-middle-three-right-c-lis')
+    			});
+    		})
+    	</script>
+<!--     	<div class="top-box">
+    		<div class="commodity-middle-three-left-box-a">
+    			<p>进口食品自营专区</p>
+    			<span>自营</span>
+    		</div>
+    		<div class="commodity-middle-three-right-c">
+    			<ul>
+    				<li class="commodity-middle-three-right-c-lis">商品介绍</li>
+    				<li>评价</li>
+    				<li>规格及包装</li>
+    				<li>售后服务</li>`
+    			</ul>
+    		</div>
+    	</div> -->
+    	<div class="top">
+    		<a class="top-one" href="../index.html">
+    			<span class="iconfont icon-xiaofangzi"></span>
+    			<p>1号店首页</p>
+    		</a>
+    		<div class="top-two">
+    			<ul>
+    				<li>
+	    				<p>中午好，请</p>
+	    				<a class="dl" href="registe.html">登陆</a>
+    				</li>
+    				<li>
+    					<a class="zc" href="#">注册</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<span class="iconfont icon-huiyuanjulebu"></span>
+    						<p>会员俱乐部</p>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<span class="iconfont icon-dingdan"></span>
+    						<p>我的订单</p>
+    					</a>
+    				</li>
+    				<li>
+    					<a href="#">
+    						<span class="iconfont icon-app"></span>
+    						<p>下载APP</p>
+    					</a>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="commodity-tops">
+    		<div class="commodity-tops-one">
+                <a href="../index.html">
+                    <img src="../img/logo_new@2x.png" alt="" width="140">                    
+                </a>
+    		</div>
+    		<div class="commodity-tops-two">
+    			<img src="../img/5c05314cNf894bdef.jpg" alt="" width="160">
+    		</div>
+    		<div class="commodity-tops-three">
+    			<input type="text">
+    			<button><span class="iconfont icon-sousuo"></span>
+				</button>
+				<ul>
+					<li>厨房用纸</li>
+					<li>泡面</li>
+					<li>金纺</li>
+					<li>洁厕灵</li>
+					<li>咖啡</li>
+					<li>料酒</li>
+					<li>平板电脑</li>
+				</ul>
+    		</div>
+    		<button>
+    			<span class="iconfont icon-cart-copy">购物车</span>
+			</button>
+    		<div class="commodity-tops-four">
+    			<ul>
+    				<li class="lis">
+    					<span class="iconfont icon-caidanlan"></span>
+    					<p>全部类目∨</p>
+    					<div class="commodity-tops-four-lis-box">
+    						<div class="commodity-tops-four-lis-box-a">
+    							<div class="commodity-tops-four-lis-box-top">
+    								<h4>全球进口</h4>
+    								<p>乳品生鲜</p>
+    								<p>饼干糕点</p>
+    								<p>酒水饮料</p>
+    								<p>休闲零食</p>
+    								<p>糖果巧克力</p>
+    								<p>粮油调味</p>
+    								<p>咖啡充饮</p>
+    								<p>麦片冲饮</p>
+    								<p>母婴玩具</p>
+    								<p>美妆个护</p>
+    								<p>家居清洁</p>
+    							</div>
+    							<div class="commodity-tops-four-lis-box-foot">
+    								<h4>母婴/玩具/童装</h4>
+    								<p>奶粉</p>
+    								<p>营养辅食</p>
+    								<p>尿裤湿巾</p>
+    								<p>洗护用品</p>
+    								<p>喂养用品</p>
+    								<p>妈妈专区</p>
+    								<p>寝具服饰</p>
+    								<p>童车童床</p>
+    								<p></p>
+    							</div>
+    						</div>
+    						<div class="commodity-tops-four-lis-box-a">
+    							<div class="commodity-tops-four-lis-box-top">
+    								<h4>家居家纺/厨具/家具</h4>
+    								<p>床上用品</p>
+    								<p>生活用品</p>
+    								<p>锅具水具</p>
+    								<p>茶具餐具</p>
+    								<p>家装软饰</p>
+    								<p>品质家具</p>
+    								<p>家装建材</p>
+    							</div>
+    							<div class="commodity-tops-four-lis-box-foot">
+    								<h4>女装/男装/内衣/珠宝</h4>
+    								<p>时尚裙装</p>
+    								<p>女士上衣</p>
+    								<p>女士裤子</p>
+    								<p>品质内衣</p>
+    								<p>型格男装</p>
+    								<p>珠宝首饰</p>
+    								<p>钟表/眼镜</p>
+    							</div>
+    						</div>
+    						<div class="commodity-tops-four-lis-box-a">
+    							<div class="commodity-tops-four-lis-box-top">
+    								<h4>手机/数码/电脑办公</h4>
+    								<p>手机</p>
+    								<p>手机配件</p>
+    								<p>摄影摄像</p>
+    								<p>影音电教</p>
+    								<p>智能设备</p>
+    								<p>数码配件</p>
+    								<p>电脑整机</p>
+    								<p>网络外设</p>
+    								<p>办公设备</p>
+    							</div>
+    							<div class="commodity-tops-four-lis-box-foot">
+    								<h4>医药/保健滋补/成人</h4>
+    								<p>营养健康</p>
+    								<p>营养成分</p>
+    								<p>传统滋补</p>
+    								<p>成人用品</p>
+    								<p>家用器械</p>
+    								<p>隐形眼镜</p>
+    							</div>
+    						</div>
+    						<div class="commodity-tops-four-lis-box-a">
+    							<div class="commodity-tops-four-lis-box-top">
+    								<h4>食品/酒/生鲜</h4>
+    								<p>饮料</p>
+    								<p>酒类</p>
+    								<p>休闲零食</p>
+    								<p>粮油干粮</p>
+    								<p>厨房调料</p>
+    								<p>饼干糕点</p>
+    								<p>牛奶乳品</p>
+    								<p>茶冲咖啡</p>
+    								<p>肉蛋海鲜</p>
+    								<p>新鲜蔬果</p>
+    								<p>方便速食</p>
+    								<p>乳品速食</p>
+    							</div>
+    							<div class="commodity-tops-four-lis-box-foot">
+    								<h4>纸巾/厨卫清洁/宠物</h4>
+    								<p>纸巾食品</p>
+    								<p>衣物清洁</p>
+    								<p>家庭清洁</p>
+    								<p>清洁用具</p>
+    								<p>驱虫除湿</p>
+    								<p>皮具护理</p>
+    								<p>宠物生活</p>
+    								<p>绿植园艺</p>
+    							</div>
+    						</div>
+    						<div class="commodity-tops-four-lis-box-a">
+    							<div class="commodity-tops-four-lis-box-top">
+    								<h4>美妆/个人清洁</h4>
+    								<p>美发护发</p>
+    								<p>女性护理</p>
+    								<p>沐浴清洁</p>
+    								<p>口腔护理</p>
+    								<p>面部护理</p>
+    								<p>缤纷彩妆</p>
+    								<p>身体护理</p>
+    								<p>美容工具</p>
+    								<p>男士护理</p>
+    							</div>
+    							<div class="commodity-tops-four-lis-box-foot">
+    								<h4>鞋靴/箱包/运动户外</h4>
+    								<p>时尚女鞋</p>
+    								<p>潮流女包</p>
+    								<p>奢侈大牌</p>
+    								<p>功能箱包</p>
+    								<p>品质男鞋</p>
+    								<p>精品男包</p>
+    								<p>运动鞋服</p>
+    								<p>健身器材</p>
+    								<p>户外装备</p>
+    							</div>
+    						</div>
+    						<div class="commodity-tops-four-lis-box-a">
+    							<div class="commodity-tops-four-lis-box-top">
+    								<h4>家用电器/汽车用品</h4>
+    								<p>厨房小电</p>
+    								<p>生活电器</p>
+    								<p>个人护理</p>
+    								<p>电视空调</p>
+    								<p>厨卫大电</p>
+    								<p>冰箱</p>
+    								<p>洗衣机</p>
+    								<p>维修保养</p>
+    								<p>汽车装饰</p>
+    								<p>车载产品</p>
+    							</div>
+    							<div class="commodity-tops-four-lis-box-foot">
+    								<h4>图书</h4>
+    								<p>少儿</p>
+    								<p>教育</p>
+    								<p>文艺</p>
+    								<p>经管励志</p>
+    								<p>人文社科</p>
+    								<p>生活</p>
+    								<p>科技</p>
+    								<p>刊/原版</p>
+    								<p>音像</p>
+    							</div>
+    						</div>
+    					</div>
+    				</li>
+    				<li>
+    					<a href="#">抢金币</a>
+    				</li>
+    				<li>
+    					<a href="Gold_mall.html">金币签到</a>
+    				</li>
+    				<li>
+    					<a href="#">充值</a>
+    				</li>
+    				<li>
+    					<a href="Super_item.html">超级单品</a>
+    				</li>
+    				<li>
+    					<a href="Super_brand.html">超级品牌</a>
+    				</li>
+    				<li>
+    					<a href="#">超级品类</a>
+    				</li>
+    				<li>
+    					<a href="couponCenter.html">领卷中心</a>
+    				</li>
+    			</ul>
+    		</div>
+    	</div>
+    	<div class="commodity-middle">
+    		<div class="commodity-middle-one">
+				<a href="#">食品饮料</a>
+				<p>＞</p>
+				<a href="kind.html">进口食品</a>
+				<p>＞</p>
+				<a href="#">饼干蛋糕</a>
+				<p>＞</p>
+				<a href="#">77</a>
+				<p>＞</p>
+				<p>77松塔饼干240g</p>
+    		</div>
+    		<div class="commodity-middle-two">
+    			<div class="commodity-middle-two-a">
+    				<div class="commodity-middle-two-a-top">
+    					<div class="commodity-middle-two-a-top-img">
+    						<!-- <div class="commodity-middle-two-a-top-movebox"></div> -->
+    					</div>
+    				</div>
+    				<div class="commodity-middle-two-a-middle">
+    					<ul class="commodity-middle-two-a-middle-uls">
+    						<li><img src="../img/commodity01.jpg" class="commodity-middle-two-a-middle-uls-lis" alt="" width="60"></li>
+    						<li><img src="../img/commodity02.jpg" class="commodity-middle-two-a-middle-uls-lis" alt="" width="60"></li>
+    						<li><img src="../img/commodity03.jpg" class="commodity-middle-two-a-middle-uls-lis" alt="" width="60"></li>
+    						<li><img src="../img/commodity04.jpg" class="commodity-middle-two-a-middle-uls-lis" alt="" width="60"></li>
+    						<li><img src="../img/commodity05.jpg" class="commodity-middle-two-a-middle-uls-lis" alt="" width="60"></li>
+    					</ul>
+    				</div>
+    				<div class="commodity-middle-two-a-floor">
+    					<p>商品编号&nbsp;&nbsp;6054566</p>
+    					<span class="iconfont icon-love-o">关注</span>
+    				</div>
+    			</div>
+    			<div class="commodity-middle-two-b">
+    				<div class="commodity-middle-two-b-first">
+    					<p class="ps">自营</p>
+    					<h4>中国台湾进口零食 77牌松塔千层酥曲奇威化饼干15粒240g</h4>
+    				</div>
+    				<div class="commodity-middle-two-b-second">
+    					<div class="commodity-middle-two-b-second-a">
+    						<p class="ps">价格</p>
+    						<p class="pss">&yen;17.9</p>
+    					</div>
+    					<div class="commodity-middle-two-b-second-b">
+    						<span class="iconfont icon-dianzan"></span>
+    						<p>好评率</p>
+    						<p class="ps-two">99%</p>
+    						<p>[评论</p>
+    						<p class="ps-two">13万+</p>
+    						<p>条]</p>
+    					</div>
+    					<div class="commodity-middle-two-b-second-c">
+    						<p class="ps-three-a">促销</p>
+    						<p class="ps-three-b">限购</p>
+    						<p>购买1-50件时享受单件价&yen;17...</p>
+    						<div class="divs-three-a">
+    							<p>共1项，展开查看∨</p>
+    							<div class="divbox">购买1-50件时享受单件价&yen;17.8超值优惠</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="commodity-middle-two-b-third">
+    					<div class="commodity-middle-two-b-third-a">
+							<p>选择颜色:</p>
+    						<div class="commodity-middle-two-b-third-a-one">
+    							<div class="commodity-middle-two-b-third-a-one-img">
+    								<img src="../img/xiaotu01.jpg" alt="">
+    							</div>
+    							<p>原味15粒</p>
+    							<div class="commodity-middle-two-b-third-a-one-vt">
+    								<span class="iconfont icon-dagouxuanzhong"></span>
+    							</div>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="commodity-middle-two-b-fourth">
+    					<div class="commodity-middle-two-b-fourth-a">
+    						<p>配送至</p>
+    						<div class="commodity-middle-two-b-fourth-a-box">
+    							<select name="user" id="">
+									<optgroup label="省市">
+										<option value="n"></option>
+										<option value="a">上海</option>
+										<option value="b">北京</option>
+										<option value="l">广州</option>
+										<option value="t">深圳</option>
+										<option value="c">杭州</option>
+										<option value="d">南宁</option>
+										<option value="e">郑州</option>
+										<option value="f">沈阳</option>
+										<option value="g">大连</option>
+										<option value="h">青岛</option>
+										<option value="i">福州</option>
+										<option value="j">昆明</option>
+										<option value="k">贵州</option>
+									</optgroup>
+								</select>
+    						</div>
+    						<p>有货，10:00前下单预计明年送达</p>
+    					</div>
+    					<div class="commodity-middle-two-b-fourth-b">
+    						<p>由1号店发货并提供售后服务.&nbsp;支持</p>
+    						<a href="#">满86元免基础运费，准时送达</a>
+    					</div>
+    					<div class="commodity-middle-two-b-fourth-c">
+    						<div class="commodity-middle-two-b-fourth-c-one">
+    							<input type="number" min="1" value="1">
+    						</div>
+    						<div class="commodity-middle-two-b-fourth-c-two">
+    							<span class="iconfont icon-cart-copy"></span>
+    							加入购物车
+    						</div>
+    						<a href="#">降价通知</a>
+    					</div>
+    				</div>
+    				<div class="commodity-middle-two-b-fiveth">
+    					<p>保障</p>
+    					<a href="#">
+    						<span class="iconfont icon-dagou"></span>
+    						支持7天无理由退换
+    					</a>
+    					<a href="#">
+    						<span class="iconfont icon-dagou"></span>
+    						正品保障
+    					</a>
+    				</div>
+    			</div>
+    			<div class="commodity-middle-two-c">
+    				<div class="commodity-middle-two-c-first">
+    					<p>看了还看</p>
+    					<div class="commodity-middle-two-c-first-one">
+    						<span class="iconfont icon-shuaxin"></span>
+    						换一批
+    					</div>
+    				</div>
+    				<div class="commodity-middle-two-c-second">
+    					<ol>
+    						<li>
+    							<img src="../img/othergoods01.jpg" alt="" width="115" height="110">
+    							<p>老板仔</p>
+    							<span>&yen;12.9</span>
+    						</li>
+    						<li>
+    							<img src="../img/othergoods02.jpg" alt="" width="115" height="110">
+    							<p>瑞士进口 威化饼</p>
+    							<span>&yen;122.9</span>
+    						</li>
+    						<li>
+    							<img src="../img/othergoods03.jpg" alt="" width="115" height="110">
+    							<p>印尼进口&nbsp;咔咔脆</p>
+    							<span>&yen;162.9</span>
+    						</li>
+    						<li>
+    							<img src="../img/othergoods04.jpg" alt="" width="115" height="110">
+    							<p>英国进口&nbsp;麦维他</p>
+    							<span>&yen;125.9</span>
+    						</li>
+    						<li>
+    							<img src="../img/othergoods05.jpg" alt="" width="115" height="110">
+    							<p>印尼进口&nbsp;皇冠</p>
+    							<span>&yen;112.9</span>
+    						</li>
+    						<li>
+    							<img src="../img/othergoods06.jpg" alt="" width="115" height="110">
+    							<p>香脆糕饼</p>
+    							<span>&yen;19.9</span>
+    						</li>
+    						<li>
+    							<img src="../img/othergoods07.jpg" alt="" width="115" height="110">
+    							<p>印尼进口&nbsp;干脆面</p>
+    							<span>&yen;11.9</span>
+    						</li>
+    						<li>
+    							<img src="../img/othergoods08.jpg" alt="" width="115" height="110">
+    							<p>印尼进口&nbsp;皇冠plus</p>
+    							<span>&yen;120.9</span>
+    						</li>
+    						<li>
+    							<img src="../img/othergoods09.jpg" alt="" width="115" height="110">
+    							<p>马来西亚进口&nbsp;香蕉酥</p>
+    							<span>&yen;89.9</span>
+    						</li>
+    					</ol>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="commodity-middle-three">
+    			<div class="commodity-middle-three-left">
+    				<div class="commodity-middle-three-left-box">
+    					<div class="commodity-middle-three-left-box-a">
+    						<p>进口食品自营专区</p>
+    						<span>自营</span>
+    					</div>
+    					<div class="commodity-middle-three-left-box-b">
+    						<p>进口食品自营专区欢迎您</p>
+    						<button>进入店铺</button>
+    					</div>
+    					<div class="commodity-middle-three-left-box-c">
+    						<p>看了本商品的用户最终购买了</p>
+    					</div>
+    				</div>
+    				<ul>
+    					<li>
+    						<img src="../img/othergoods01.jpg" alt="" width="115" height="110">
+    						<p>老板仔</p>
+    						<span>&yen;12.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods02.jpg" alt="" width="115" height="110">
+    						<p>瑞士进口 威化饼</p>
+    						<span>&yen;122.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods03.jpg" alt="" width="115" height="110">
+    						<p>印尼进口&nbsp;咔咔脆</p>
+    						<span>&yen;162.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods04.jpg" alt="" width="115" height="110">
+    						<p>英国进口&nbsp;麦维他</p>
+    						<span>&yen;125.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods05.jpg" alt="" width="115" height="110">
+    						<p>印尼进口&nbsp;皇冠</p>
+    						<span>&yen;112.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods06.jpg" alt="" width="115" height="110">
+    						<p>香脆糕饼</p>
+    						<span>&yen;19.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods07.jpg" alt="" width="115" height="110">
+    						<p>印尼进口&nbsp;干脆面</p>
+    						<span>&yen;11.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods08.jpg" alt="" width="115" height="110">
+    						<p>印尼进口&nbsp;皇冠plus</p>
+    						<span>&yen;120.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods09.jpg" alt="" width="115" height="110">
+    						<p>马来西亚进口&nbsp;香蕉酥</p>
+    						<span>&yen;89.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods01.jpg" alt="" width="115" height="110">
+    						<p>老板仔</p>
+    						<span>&yen;12.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods02.jpg" alt="" width="115" height="110">
+    						<p>瑞士进口 威化饼</p>
+    						<span>&yen;122.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    					<li>
+    						<img src="../img/othergoods03.jpg" alt="" width="115" height="110">
+    						<p>印尼进口&nbsp;咔咔脆</p>
+    						<span>&yen;162.9</span><br>
+    						<button>查看详情</button>
+    					</li>
+    				</ul>
+    			</div>
+    			<div class="commodity-middle-three-right">
+    				<div class="commodity-middle-three-right-a">
+    					<p>顾客最喜爱商品排行榜</p>
+    				</div>
+    				<div class="commodity-middle-three-right-b">
+    					<ul>
+    						<li>
+    							<div>
+    								<span class="iconfont icon-first"></span>
+    							</div>
+    							<a href="#">
+    								<img src="../img/othergoods03.jpg" alt="" width="115" height="110">
+    							</a>
+    							<a href="#">
+    								<p>印尼进口 Tango咔咔脆威化饼干 休闲零食小吃 早餐下午茶食品</p>
+    							</a>
+    							    <p>&yen;40.0</p>
+    							<button>查看详情</button>
+    						</li>
+    						<li>
+    							<div>
+    								<span class="iconfont icon-second"></span>
+    							</div>
+    							<a href="#">
+    								<img src="../img/othergoods01.jpg" alt="" width="115" height="110">
+    							</a>
+    							<a href="#">
+    								<p>印尼进口 Tango咔咔脆威化饼干 休闲零食小吃 早餐下午茶食品</p>
+    							</a>
+    							    <p>&yen;40.0</p>
+    							<button>查看详情</button>
+    						</li>
+    						<li>
+    							<div>
+    								<span class="iconfont icon-disan"></span>
+    							</div>
+    							<a href="#">
+    								<img src="../img/othergoods02.jpg" alt="" width="115" height="110">
+    							</a>
+    							<a href="#">
+    								<p>印尼进口 Tango咔咔脆威化饼干 休闲零食小吃 早餐下午茶食品</p>
+    							</a>
+    							    <p>&yen;40.0</p>
+    							<button>查看详情</button>
+    						</li>
+    						<li>
+    							<div>
+    								<span class="iconfont icon-disiming"></span>
+    							</div>
+    							<a href="#">
+    								<img src="../img/othergoods04.jpg" alt="" width="115" height="110">
+    							</a>
+    							<a href="#">
+    								<p>印尼进口 Tango咔咔脆威化饼干 休闲零食小吃 早餐下午茶食品</p>
+    							</a>
+    							    <p>&yen;40.0</p>
+    							<button>查看详情</button>
+    						</li>
+    						<li>
+    							<div>
+    								<span class="iconfont icon-diwuming"></span>
+    							</div>
+    							<a href="#">
+    								<img src="../img/othergoods05.jpg" alt="" width="115" height="110">
+    							</a>
+    							<a href="#">
+    								<p>印尼进口 Tango咔咔脆威化饼干 休闲零食小吃 早餐下午茶食品</p>
+    							</a>
+    							    <p>&yen;40.0</p>
+    							<button>查看详情</button>
+    						</li>
+    					</ul>
+    				</div>
+    				<div class="commodity-middle-three-right-c">
+    					<ul>
+    						<li class="commodity-middle-three-right-c-lis">商品介绍</li>
+    						<li>评价</li>
+    						<li>规格及包装</li>
+    						<li>售后服务</li>
+    					</ul>
+    				</div>
+    				<div class="commodity-middle-three-right-c-one">
+    					<div class="commodity-middle-three-right-c-one-top">
+    						<p>规格参数</p>
+    						<span>查看更多>></span>
+    					</div>
+    					<div class="commodity-middle-three-right-c-one-middle">
+    						<p>品牌：77</p>
+    						<p>商品名称：中国台湾进口零食，77牌松塔千层曲奇威化饼干</p>
+    					</div>
+    					<div class="commodity-middle-three-right-c-one-floor">
+    						<p>商品毛重：300.00g</p>
+    						<p>商品产地：中国台湾</p>
+    					</div>
+    				</div>
+    				<div class="commodity-middle-three-right-c-two">
+    					<img src="../img/jieshao01.png" alt="">
+    				</div>
+    				<div class="commodity-middle-three-right-c-three">
+    					<img src="../img/jieshao02.png" alt="">
+    				</div>
+    				<div class="commodity-middle-three-right-c-four">
+    					<img src="../img/jieshao03.png" alt="">
+    				</div>
+    				<div class="commodity-middle-three-right-c-five">
+    					<img src="../img/dianping01.png" alt="">
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+<!--          <div class="jk-floor">
+             <img src="../img/floor001.png" alt="" width="">
+        </div> -->
+    </body>
+</html>
